@@ -2,18 +2,18 @@
 
 # We are using Tomcat 8 in the setup below are the instructions to setup tomcat
 
-  function Hello(){
+  function HaProxy(){
  add-apt-repository ppa:vbernat/haproxy-1.5
  apt-get update
  apt-get install haproxy
- service tomcat restart
+ service haproxy restart
 
 }
  
  quit (){
  exit
  }
-Hello
-quit 
+HaProxy 
 
-proxy --version # for version check
+haproxy --version # for version check
+quit
